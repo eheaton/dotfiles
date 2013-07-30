@@ -1,3 +1,27 @@
 # ENVIRONMENT VARIABLES
 
-export PATH="~/.bin:$PATH"
+# Setting the PATH for custom home folder in
+# ~ user directory
+PATH="~/.bin:$PATH"
+
+# PATH setting for RVM
+# 
+PATH=$PATH:$HOME/.rvm/bin
+
+# Setting PATH for MacPython 2.5
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+
+# Setting PATH for Python 2.7
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+export EDITOR='subl -w'
+
+export CLICOLOR=1
+export LSCOLORS=exfxcxdxbxegedabagacad
+
+# Tell grep to highlight matches
+export GREP_OPTIONS='--color=auto'

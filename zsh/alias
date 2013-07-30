@@ -1,6 +1,24 @@
 # ALIAS
 
 alias l='ls -la'
+alias b-reel-projects="cd /Users/eheaton/Documents/Projects/B-Reel/"
+alias compc='compass compile'
+alias compw='compass watch'
+alias compcc='compass clean; compass compile'
+
+alias artisan='php artisan'
+alias lc='php artisan generate:controller'
+alias lv='php artisan generate:view'
+alias lm='php artisan generate:model'
+alias art='php artisan'
+
+alias subl='subl -w'
+
+alias gp='git pull'
+alias gpp='git pull; git push;'
+
+alias ls='ls -G'
+alias ll='ls -la'
 
 take() {
 	mkdir $1
