@@ -1,7 +1,6 @@
 # ALIAS
 
 alias l='ls -la'
-alias b-reel-projects="cd /Users/eheaton/Documents/Projects/B-Reel/"
 alias compc='compass compile'
 alias compw='compass watch'
 alias compcc='compass clean; compass compile'
@@ -12,7 +11,7 @@ alias lv='php artisan generate:view'
 alias lm='php artisan generate:model'
 alias art='php artisan'
 
-alias subl='subl -w'
+# alias subl='subl -w'
 
 alias gp='git pull'
 alias gpp='git pull; git push;'
@@ -23,4 +22,19 @@ alias ll='ls -la'
 take() {
 	mkdir $1
 	cd $1
+}
+
+show_colors() {
+	for x in 0 1 4 5 7 8;
+	do
+	        for i in `seq 30 37`;
+	        do
+	                for a in `seq 40 47`;
+	                do
+	                        echo -ne "\e[$x;$i;$a""m\\\e[$x;$i;$a""m\e[0;37;40m ";
+	                done;
+	                echo;
+	        done;
+	done;
+	echo "";
 }

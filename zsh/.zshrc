@@ -1,5 +1,11 @@
 #
 
+# B-Reel Project Command Line Utility
+# -----------------------------------
+# 
+source ~/.brp-rc
+
+
 source ~/.dotfiles/zsh/env
 source ~/.dotfiles/zsh/alias
 source ~/.dotfiles/zsh/prompt
@@ -11,10 +17,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="robbyrussell"
-# ZSH_THEME="eheaton"
-# ZSH_THEME="agnoster"
-ZSH_THEME="geoffgarside"
+ZSH_THEME="eheaton"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -50,4 +53,8 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+export PATH="/usr/local/bin:$PATH"
+
+export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
 
