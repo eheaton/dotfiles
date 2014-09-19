@@ -2,7 +2,7 @@
 
 # B-Reel Project Command Line Utility
 # -----------------------------------
-# 
+#
 source ~/.brp-rc
 
 
@@ -53,8 +53,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
-export PATH="/usr/local/bin:$PATH"
 
 export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
 

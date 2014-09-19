@@ -5,8 +5,17 @@
 PATH="~/.bin:$PATH"
 
 # PATH setting for RVM
-# 
+#
 PATH=$PATH:$HOME/.rvm/bin
+
+# PATH setting for PHP
+#
+PATH=/Applications/MAMP/bin/php/php5.5.10/bin:$PATH
+
+# Custom Misc Paths
+#
+PATH="/usr/local/bin:$PATH"
+PATH=/usr/local/share/npm/bin:$PATH
 
 # Setting PATH for MacPython 2.5
 # The orginal version is saved in .bash_profile.pysave
