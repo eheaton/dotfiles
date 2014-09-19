@@ -11,6 +11,9 @@ alias lv='php artisan generate:view'
 alias lm='php artisan generate:model'
 alias art='php artisan'
 
+alias composer='php composer.phar'
+alias comp='php composer.phar'
+
 # alias subl='subl -w'
 
 alias gp='git pull'
