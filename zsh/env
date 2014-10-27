@@ -10,7 +10,7 @@ PATH=$PATH:$HOME/.rvm/bin
 
 # PATH setting for PHP
 #
-PATH=/Applications/MAMP/bin/php/php5.5.10/bin:$PATH
+PATH="/Applications/MAMP/bin/php/php5.5.14/bin:${PATH}"
 
 # Custom Misc Paths
 #
@@ -34,3 +34,6 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
+
+
+
