@@ -6,16 +6,17 @@ PATH="~/.bin:$PATH"
 
 # PATH setting for RVM
 #
-PATH=$PATH:$HOME/.rvm/bin
+PATH=$PATH:$HOME/.rvm/bin:~/.composer/vendor/bin
 
 # PATH setting for PHP
 #
-PATH="/Applications/MAMP/bin/php/php5.5.14/bin:${PATH}"
+PATH="/Applications/MAMP/bin/php/php5.6.10/bin:${PATH}"
 
 # Custom Misc Paths
 #
 PATH="/usr/local/bin:$PATH"
 PATH=/usr/local/share/npm/bin:$PATH
+PATH=/usr/local/sbin:$PATH
 
 # Setting PATH for MacPython 2.5
 # The orginal version is saved in .bash_profile.pysave
@@ -35,5 +36,8 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
+# Updated the Java Version
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 
-
+# Creative Suite SDK
+export CSSDK=/Users/eheaton/Documents/Resources/Creative\ Suite/SDK
