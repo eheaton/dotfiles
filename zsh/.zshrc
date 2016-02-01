@@ -56,5 +56,3 @@ source $ZSH/oh-my-zsh.sh
 
 export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
 
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
