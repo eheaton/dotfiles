@@ -11,6 +11,9 @@ alias lv='php artisan generate:view'
 alias lm='php artisan generate:model'
 alias art='php artisan'
 
+alias repos='cd /var/repositories'
+alias sites='cd /var/www/sites'
+
 alias cloud='cloudapp'
 alias comp='composer'
 
@@ -49,4 +52,13 @@ show_colors() {
 	        done;
 	done;
 	echo "";
+}
+
+function reload_shell(){
+    if [[ -n $( echo $SHELL | grep zsh ) ]]; then
+        . ~/.zshrc
+    else
+        source ~/.bash_profile
+        source ~/.bashrc
+    fi
 }
