@@ -34,6 +34,8 @@ alias gpp='git pull; git push;'
 alias ls='ls -G'
 alias ll='ls -la'
 
+alias sing='say --voice="Good News"'
+
 take() {
 	mkdir $1
 	cd $1
@@ -54,11 +56,16 @@ show_colors() {
 	echo "";
 }
 
-function reload_shell(){
+reload_shell(){
     if [[ -n $( echo $SHELL | grep zsh ) ]]; then
         . ~/.zshrc
     else
         source ~/.bash_profile
         source ~/.bashrc
     fi
+}
+
+flush_dns(){
+    # Only works with OS X Yosemite & OS X El Capitan
+    sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder;
 }
