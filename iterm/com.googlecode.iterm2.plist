@@ -10,6 +10,8 @@
 	<true/>
 	<key>AllowClipboardAccess</key>
 	<false/>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AnimateDimming</key>
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -20,6 +22,18 @@
 	<integer>1</integer>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
+	<key>BadgeFont</key>
+	<string>Operator Mono Book</string>
+	<key>BadgeFontIsBold</key>
+	<true/>
+	<key>BadgeMaxHeightFraction</key>
+	<real>0.059999998658895493</real>
+	<key>BadgeMaxWidthFraction</key>
+	<real>0.40000000596046448</real>
+	<key>BadgeRightMargin</key>
+	<integer>1</integer>
+	<key>BadgeTopMargin</key>
+	<integer>-15</integer>
 	<key>CheckTestRelease</key>
 	<true/>
 	<key>ClosingHotkeySwitchesSpaces</key>
@@ -446,13 +460,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1409 110 445 398 0 0 1920 1177 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>268 585 606 456 0 0 1680 1050 </string>
+	<string>268 571 606 456 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>910 764 384 129 0 0 1920 1177 </string>
+	<string>1005 679 400 129 0 0 1680 1028 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 494 620 392 0 0 1680 1050 </string>
+	<string>650 607 620 392 0 0 1920 1200 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>241 318 796 473 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1050 0 0 1680 1027 </string>
+	<string>0 0 1680 1050 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -464,12 +480,16 @@
 			<true/>
 			<key>Ansi 0 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.19370138645172119</real>
+				<real>0.10896279662847519</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.15575926005840302</real>
+				<real>0.090194746851921082</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.0050805467180907726</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -590,12 +610,16 @@
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.15170273184776306</real>
+				<real>0.38859337568283081</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.11783610284328461</real>
+				<real>0.45276182889938354</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.41099447011947632</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -612,15 +636,34 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12941177189350128</real>
+				<real>0.074479669332504272</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.11868807673454285</real>
+				<real>0.068885602056980133</real>
 				<key>Red Component</key>
-				<real>0.10241414606571198</real>
+				<real>0.060364007949829102</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
+			<key>Badge Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>0.6310272216796875</real>
+				<key>Blue Component</key>
+				<real>0.25170639157295227</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
+				<key>Green Component</key>
+				<real>0.25159946084022522</real>
+				<key>Red Component</key>
+				<real>0.25628066062927246</real>
+			</dict>
+			<key>Badge Text</key>
+			<string>\(session.username)@\(session.hostname)</string>
 			<key>Blend</key>
 			<real>0.30000001192092896</real>
 			<key>Blink Allowed</key>
@@ -843,13 +886,6 @@
 					<key>Text</key>
 					<string>[1;6D</string>
 				</dict>
-				<key>0xf702-0x280000</key>
-				<dict>
-					<key>Action</key>
-					<integer>11</integer>
-					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x44</string>
-				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -870,13 +906,6 @@
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;6C</string>
-				</dict>
-				<key>0xf703-0x280000</key>
-				<dict>
-					<key>Action</key>
-					<integer>11</integer>
-					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x43</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -1007,6 +1036,8 @@
 			<string>OperatorMono-Book 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
+			<key>Place Prompt at First Column</key>
+			<false/>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -1016,7 +1047,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>5000</integer>
 			<key>Scrollback With Status Bar</key>
 			<false/>
 			<key>Scrollback in Alternate Screen</key>
@@ -1054,6 +1085,8 @@
 			<true/>
 			<key>Shortcut</key>
 			<string>T</string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Smart Cursor Color</key>
@@ -1149,6 +1182,8 @@
 					<string>\btelnet:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\b</string>
 				</dict>
 			</array>
+			<key>Space</key>
+			<integer>0</integer>
 			<key>Sync Title</key>
 			<true/>
 			<key>Tags</key>
@@ -1904,6 +1939,14 @@
 			<string>/Users/eheaton</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
+	<key>NoSyncConfirmShellIntegrationCommand</key>
+	<true/>
+	<key>NoSyncConfirmShellIntegrationCommand_selection</key>
+	<integer>0</integer>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
@@ -1912,10 +1955,14 @@
 	<true/>
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
 	<integer>1</integer>
+	<key>NoSyncInstallUtilitiesPackage</key>
+	<true/>
+	<key>NoSyncInstallUtilitiesPackage_selection</key>
+	<integer>2</integer>
 	<key>NoSyncInstallationId</key>
 	<string>C4E7A8BC-A076-4FE1-8C8F-C3050F02A81F</string>
 	<key>NoSyncLastTipTime</key>
-	<real>486396535.08007699</real>
+	<real>486483686.81737602</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1998,6 +2045,7 @@
 		<string>0062</string>
 		<string>0063</string>
 		<string>0064</string>
+		<string>0065</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -2050,6 +2098,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/eheaton/.dotfiles/iterm</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -2063,11 +2113,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml?shard=8</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=8</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-05-25T18:09:18Z</date>
+	<date>2016-11-03T17:19:39Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2075,7 +2125,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -2086,6 +2136,8 @@
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
+	<key>TabStyle</key>
+	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
@@ -2124,6 +2176,10 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160510</string>
+	<string>3.0.9</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
