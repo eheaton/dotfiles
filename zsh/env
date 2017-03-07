@@ -4,31 +4,27 @@
 # ~ user directory
 PATH="~/.bin:$PATH"
 
-# PATH setting for RVM
-#
-PATH=$PATH:$HOME/.rvm/bin:~/.composer/vendor/bin
+# PATH setting for Composer
+PATH=$PATH:~/.composer/vendor/bin
 
 # PATH setting for PHP
-#
+# (requires an _current folder alias)
 PATH="/Applications/MAMP/bin/php/_current/bin:${PATH}"
 
-# Custom Misc Paths
-#
+# Local Bin / NPM Paths
 PATH="/usr/local/bin:$PATH"
 PATH=/usr/local/share/npm/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 
 # Setting PATH for MacPython 2.5
-# The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
-
 # Setting PATH for Python 2.7
-# The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+
 export PATH
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-export EDITOR='subl -w'
+# Load RVM functionality
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
@@ -36,13 +32,6 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
-# Updated the Java Version
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
-# Python Path
-export CUDA_HOME=/usr/local/cuda
-export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
-export PATH="$CUDA_HOME/bin:$PATH"
-
-# Creative Suite SDK
-export CSSDK=/Users/eheaton/Documents/Resources/Creative\ Suite/SDK
+# Default Editor
+# ** OS X Only **
+export EDITOR='subl -w'
