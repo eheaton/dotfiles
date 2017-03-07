@@ -1,4 +1,23 @@
 set tabsize 4
 set tabstospaces
+set const
+set smooth
+set autoindent
 
-                
+# Nanorc (syntax) files
+include "~/.dotfiles/nano/syntax/apacheconf.nanorc"
+include "~/.dotfiles/nano/syntax/css.nanorc"
+include "~/.dotfiles/nano/syntax/javascript.nanorc"
+include "~/.dotfiles/nano/syntax/js.nanorc"
+include "~/.dotfiles/nano/syntax/json.nanorc"
+include "~/.dotfiles/nano/syntax/html.nanorc"
+include "~/.dotfiles/nano/syntax/nginx.nanorc"
+include "~/.dotfiles/nano/syntax/php.nanorc"
+include "~/.dotfiles/nano/syntax/reST.nanorc"
+include "~/.dotfiles/nano/syntax/sh.nanorc"
+include "~/.dotfiles/nano/syntax/sql.nanorc"
+include "~/.dotfiles/nano/syntax/vi.nanorc"
+include "~/.dotfiles/nano/syntax/xml.nanorc"
+include "~/.dotfiles/nano/syntax/yaml.nanorc"
+include "~/.dotfiles/nano/syntax/zsh.nanorc"
+include "~/.dotfiles/nano/syntax/zshrc.nanorc"
