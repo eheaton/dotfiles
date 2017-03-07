@@ -1,28 +1,44 @@
-# ALIAS
 
+
+# Folder navigation shortcuts
 alias l='ls -la'
-alias compc='compass compile'
-alias compw='compass watch'
-alias compcc='compass clean; compass compile'
+alias ls='ls -G'
+alias ll='ls -la'
 
+take() {
+    mkdir $1
+    cd $1
+}
+
+# Specific Folder Aliases
+alias repos='cd /var/repositories'
+alias sites='cd /var/www/sites'
+alias logs='cd /var/log'
+alias vhosts='cd /etc/apache2/sites-available'
+alias vhosts_enabled='cd /etc/apache2/sites-enabled'
+
+# Laravel / PHP Specific Shortcuts
 alias artisan='php artisan'
 alias lc='php artisan generate:controller'
 alias lv='php artisan generate:view'
 alias lm='php artisan generate:model'
 alias art='php artisan'
-
-alias gchmod='git update-index --chmod=+x'
-
-alias repos='cd /var/repositories'
-alias sites='cd /var/www/sites'
-
-alias cloud='cloudapp'
 alias comp='composer'
 
+# GIT
+alias gp='git pull'
+alias gpp='git pull; git push;'
+alias gchmod='git update-index --chmod=+x'
+
+# Misc
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I rc'
-
+alias cloud='cloudapp'
 alias mt='multitail -CS php'
+alias sing='say --voice="Good News"'
 
+#
+# Opens "Marked" markdown reader for OSX
+# --------------------------------------
 function marked(){
     if [ -n $1 ]; then
         open -a "marked 2.app" $1
@@ -31,21 +47,10 @@ function marked(){
     fi
 }
 
-# alias subl='subl -w'
-
-alias gp='git pull'
-alias gpp='git pull; git push;'
-
-alias ls='ls -G'
-alias ll='ls -la'
-
-alias sing='say --voice="Good News"'
-
-take() {
-	mkdir $1
-	cd $1
-}
-
+#
+# Shows an grid list of colors available to
+# the current OS
+# --------------------------------------
 show_colors() {
 	for x in 0 1 4 5 7 8;
 	do
@@ -61,6 +66,10 @@ show_colors() {
 	echo "";
 }
 
+#
+# Reloads the current shell settings
+# (works with Bash or Zsh)
+# --------------------------------------
 reload_shell(){
     if [[ -n $( echo $SHELL | grep zsh ) ]]; then
         . ~/.zshrc
@@ -70,7 +79,10 @@ reload_shell(){
     fi
 }
 
+#
+# Clears the internal DNS cache
+# (MacOS / OS X Yosemite / El Captan Only)
+# --------------------------------------
 flush_dns(){
-    # Only works with OS X Yosemite & OS X El Capitan
     sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder;
 }
