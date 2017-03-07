@@ -1,0 +1,113 @@
+#
+# .brp-rc
+# -----------------------------
+#
+
+function brp(){
+    local brp_exec="brp.exec"
+    local first_arg=0
+    args=( "$@" )
+
+    if [[ -z $( which $brp_exec ) ]]; then
+        exit
+    fi
+
+
+    if [[ -n $( echo $SHELL | grep zsh ) ]]; then
+        first_arg=1
+    fi
+
+    if [ "${#args[@]}" -eq 0 ]; then
+        brp.exec
+        # local brp_dir="$( $brp_exec --debug=false --get-project-dir )"
+
+        # if [ -d "$brp_dir" ]; then
+        #     cd "$brp_dir"
+        # else
+        #     echo "$brp_dir"
+        # fi
+    else
+        # Check to see if our command is an alias
+        # It should be in the format `brp {alias}:{optional_sub_cmd}
+        local main_cmd=$( echo "${args[$first_arg]}" | sed  -e 's/\([^:^-^\/]*\)\:*\([^:]*\)\:*\([^:]*\).*/\1/g' )
+        # See if there's any commands that follow the possible alias
+        local sub_cmd=$( echo "${args[$first_arg]}" | sed  -e 's/\([^:]*\)\:*\(.*\)/\2/g' )
+
+        local brp_alias="$( brp.exec --debug=false --show-errors=false --get-alias=$main_cmd )"
+
+        if [ -n "$brp_alias" ] && [ -d "$brp_alias" ]; then
+            local splice=0
+            cd "$brp_alias"
+            if [ -n "$sub_cmd" ]; then
+                case "$sub_cmd" in
+                    "utils" | "source" | "repository" )
+                        cd "$sub_cmd"
+                        # splice=2
+                        ;;
+                    * )
+                        # splice=1
+                        ;;
+                esac
+                # args=${args[@]:1}
+                # echo "From RC: ${args[@]:1}"
+                brp.exec $sub_cmd "${args[@]:1}"
+            else
+                brp.exec current-project --debug=false --show-errors=false
+            fi
+        else
+            brp.exec ${args[@]}
+        fi
+    fi
+}
+
+function brp2(){
+    local brp_exec="brp2.exec"
+    local first_arg=0
+    args=( "$@" )
+
+    if [[ -n $( echo $SHELL | grep zsh ) ]]; then
+        first_arg=1
+    fi
+
+    if [ "${#args[@]}" -eq 0 ]; then
+        brp.exec
+        # local brp_dir="$( $brp_exec --debug=false --get-project-dir )"
+
+        # if [ -d "$brp_dir" ]; then
+        #     cd "$brp_dir"
+        # else
+        #     echo "$brp_dir"
+        # fi
+    else
+        # Check to see if our command is an alias
+        # It should be in the format `brp {alias}:{optional_sub_cmd}
+        local main_cmd=$( echo "${args[$first_arg]}" | sed  -e 's/\([^:^-^\/]*\)\:*\([^:]*\)\:*\([^:]*\).*/\1/g' )
+        # See if there's any commands that follow the possible alias
+        local sub_cmd=$( echo "${args[$first_arg]}" | sed  -e 's/\([^:]*\)\:*\(.*\)/\2/g' )
+
+        local brp_alias="$( brp.exec --debug=false --show-errors=false --get-alias=$main_cmd )"
+
+        if [ -n "$brp_alias" ] && [ -d "$brp_alias" ]; then
+            local splice=0
+            cd "$brp_alias"
+            if [ -n "$sub_cmd" ]; then
+                case "$sub_cmd" in
+                    "utils" | "source" | "repository" )
+                        cd "$sub_cmd"
+                        # splice=2
+                        ;;
+                    * )
+                        # splice=1
+                        ;;
+                esac
+                # args=${args[@]:1}
+                # echo "From RC: ${args[@]:1}"
+                brp.exec $sub_cmd "${args[@]:1}"
+            else
+                brp.exec current-project --debug=false --show-errors=false
+            fi
+        else
+            brp.exec ${args[@]}
+        fi
+    fi
+}
