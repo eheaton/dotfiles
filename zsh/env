@@ -10,7 +10,7 @@ PATH=$PATH:$HOME/.rvm/bin:~/.composer/vendor/bin
 
 # PATH setting for PHP
 #
-PATH="/Applications/MAMP/bin/php/php5.6.10/bin:${PATH}"
+PATH="/Applications/MAMP/bin/php/_current/bin:${PATH}"
 
 # Custom Misc Paths
 #
@@ -37,7 +37,12 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 export GREP_OPTIONS='--color=auto'
 
 # Updated the Java Version
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+# Python Path
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+export PATH="$CUDA_HOME/bin:$PATH"
 
 # Creative Suite SDK
 export CSSDK=/Users/eheaton/Documents/Resources/Creative\ Suite/SDK
