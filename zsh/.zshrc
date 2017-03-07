@@ -1,10 +1,15 @@
-#
+# Set Terminal Emulation Mode
+TERM=xterm-256color
+
+# Set Language Options
+LC_ALL=en_US.UTF-8
+LANG=en_US.UTF-8
+LANGUAGE=en_US.UTF-8
 
 # B-Reel Project Command Line Utility
 # -----------------------------------
 #
-source ~/.brp-rc
-
+source ~/.brprc
 
 source ~/.dotfiles/zsh/env
 source ~/.dotfiles/zsh/alias
@@ -53,6 +58,4 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
-export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
-
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
