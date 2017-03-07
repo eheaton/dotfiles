@@ -11,13 +11,18 @@ alias lv='php artisan generate:view'
 alias lm='php artisan generate:model'
 alias art='php artisan'
 
+alias gchmod='git update-index --chmod=+x'
+
 alias repos='cd /var/repositories'
 alias sites='cd /var/www/sites'
 
 alias cloud='cloudapp'
 alias comp='composer'
 
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I rc'
+
 alias mt='multitail -CS php'
+
 function marked(){
     if [ -n $1 ]; then
         open -a "marked 2.app" $1
