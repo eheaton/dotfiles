@@ -1,0 +1,23 @@
+[
+{
+    "id": "tools",
+    "children":
+    [
+    {
+	    "id": "ccext",
+	    "caption": "CC Extensions",
+	    "children":
+	    [
+	        {"caption": "Create Extension", "command": "createext" },
+	        {"caption": "Open Developer Tools", "command": "showdevtools" },
+	        {"caption": "Browse Extension Folder", "command": "showextfolder" },	 
+	        {"caption": "-", "id":"separator"},
+	        {"caption": "Enable Debug Mode", "command": "enabledebug" },	        
+	        {"caption": "-", "id":"separator"},
+	        {"caption": "Fix Permissions", "command": "fixpermissions" }
+
+	    ]
+	}
+    ]
+}
+]
