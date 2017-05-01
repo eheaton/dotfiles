@@ -1,1 +1,6 @@
 .DS_Store
+
+sublimetext/User/Package\ Control.cache/*
+!sublimetext/User/Package\ Control.cache/
+
+sublimetext/User/Package\ Control.last-run
