@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[Schema::create( '${1:table}', function( \$t ){
+	\$t->increments( 'id' );
+	${2}
+	\$t->timestamps();
+});]]></content>
+    <tabTrigger>Schema</tabTrigger>
+    <scope>source.php</scope>
+    <description>Laravel: Schema::create()</description>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[\$${1:table}->foreign( '${2:field}' )->references( '${3:references}' )->on( '${4:table}' );${5}]]></content>
+    <tabTrigger>foreign</tabTrigger>
+    <scope>source.php</scope>
+    <description>Laravel: $t->foreign</description>
+</snippet>

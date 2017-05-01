@@ -1,0 +1,9 @@
+{
+	"extensions":
+	[
+		".brp-version",
+		".env",
+		"prod",
+		"staging"
+	]
+}

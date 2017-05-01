@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[class ${1:Model} extends Eloquent {}]]></content>
+    <tabTrigger>Model</tabTrigger>
+    <scope>source.php</scope>
+    <description>Laravel: Model::create class</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+<meta property="og:title"       content="${1:title}" />
+<meta property="og:description" content="${2:description}" />
+<meta property="og:url"         content="${3:url}" />
+<meta property="og:image"       content="${4:image}" />
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fbog</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.html,source.php</scope> -->
+    <!-- <scope></scope> -->
+    <description>Facebook OpenGraph Tags</description>
+</snippet>
