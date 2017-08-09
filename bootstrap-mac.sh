@@ -9,7 +9,9 @@
 brew tap caskroom/cask
 
 # Install Mac App store CLI
-brew install mas
+# brew install mas
+brew install wget
+
 
 # ======================================================
 # Mac App Store (MAS) Apps
@@ -19,22 +21,16 @@ brew install mas
     mas install 443987910
 # - Bear
     mas install 1091189122
-# - Better Rename 9
-    mas install 414209656
 # - The Clock
     mas install 488764545
 # - Converto
     mas install 576421334
-# - Dash
-    mas install 449589707
 # - Divvy
     mas install 413857545
 # - Icon Slate
     mas install 439697913
 # - iPhoto
     mas install 408981381
-# - Marked 2
-    mas install 890031187
 # - MediaInfo
     mas install 510620098
 # - Reeder
@@ -43,14 +39,17 @@ brew install mas
     mas install 803453959
 # - Textual 5
     mas install 896450579
-# - Todoist
-    mas install 585829637
-# - Transmit
-    mas install 403388562
 # - Tweetbot
     mas install 557168941
 # - XCode
     mas install 497799835
+
+# - Dash
+    mas install 449589707
+# - Marked 2
+    mas install 890031187
+# - Better Rename 9
+    mas install 414209656
 
 # Run the upgrade to ensure we're on the latest of
 # all of the above
