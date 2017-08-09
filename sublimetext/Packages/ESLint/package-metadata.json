@@ -1,0 +1,1 @@
+{"dependencies": [], "description": "ESLint any JavaScript file in Sublime Text", "platforms": ["*"], "url": "https://github.com/polygonplanet/sublime-text-eslint", "version": "5.0.1", "sublime_text": "*"}

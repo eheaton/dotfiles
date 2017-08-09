@@ -3,7 +3,11 @@
 	[
 		".brp-version",
 		".env",
+		"staging",
+		"env",
+		"development",
 		"prod",
-		"staging"
+		"local",
+		"example"
 	]
 }
