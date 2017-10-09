@@ -9,8 +9,11 @@
 brew tap caskroom/cask
 
 # Install Mac App store CLI
-# brew install mas
+brew install mas
 brew install wget
+
+mas signin apple@b-reel.com
+mas signin eric.heaton@mac.com
 
 
 # ======================================================
@@ -44,6 +47,11 @@ brew install wget
 # - XCode
     mas install 497799835
 
+# - Omnigraffle
+    mas install 1142578753
+
+# - Markoff
+    mas install 1084713122
 # - Dash
     mas install 449589707
 # - Marked 2
@@ -81,6 +89,28 @@ mas upgrade
     brew cask install sublime-text
 # - Sequel Pro
     brew cask install sequel-pro
+# - Quicksilver
+    brew cask install quicksilver
+# - Insomnia
+    brew cask install insomnia
+# - Choosey
+    brew cask install choosey
+# - VLC
+    brew cask install vlc
+# - Spotify
+    brew cask install spotify
+# - Microsoft Office
+    brew cask install Microsoft-office
+
+# - Quicklook Plugins
+    brew cask install qlmarkdown
+    brew cask install qlcolorcode
+    brew cask install qlstephen
+    brew cask install quicklook-json
+    brew cask install quicklook-csv
+    brew cask install qlimagesize
+    brew cask install webpquicklook
+    brew cask install qlvideo
 
 # ======================================================
 # Command Line Apps
@@ -97,6 +127,25 @@ mas upgrade
     brew install optipng
     brew install gifsicle
 
+    brew install automake autoconf libtool libpng
 
+# ======================================================
+# System Preferences
+# ======================================================
+
+# Set the screenshots folder
+mkdir -p ~/Documents/Screenshots
+defaults write com.apple.screencapture location ~/Documents/Screenshots
+killall SystemUIServer
+
+# Hide all items on the desktop
+defaults write com.apple.finder CreateDesktop false
+killall Finder
+
+# Disable Gatekeeper
+sudo spctl --master-disable
+
+# Don't open iTunes when iPHone is connected
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
 
 # - Install SSH keys
