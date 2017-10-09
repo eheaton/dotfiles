@@ -120,6 +120,10 @@ mas upgrade
     brew install httpie
 # - GIT
     brew install git
+
+# - Dockutil
+    brew install dockutil
+
 # - BRP (WIP)
 # brew install brp
 # - NodeJS / NPM
@@ -147,5 +151,46 @@ sudo spctl --master-disable
 
 # Don't open iTunes when iPHone is connected
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
+
+# ======================================================
+# Dock Settings
+# ======================================================
+
+# Set dock to left orientation
+defaults write com.apple.dock orientation -string left
+
+# Autohide the dock
+defaults write com.apple.dock autohide -bool true
+
+# Set up the icons that we want
+dockutil --remove all
+dockuitl --add "/Applications/Safari.app" --no-restart
+dockutil --add "/Applications/Slack.app" --no-restart
+dockutil --add "/Applications/Messages.app" --no-restart
+dockutil --add "/Applications/Reeder.app" --no-restart
+dockutil --add "/Applications/iTerm.app" --no-restart
+dockutil --add "/Applications/Sublime Text.app" --no-restart
+dockutil --add "/Applications/Bear.app" --no-restart
+
+dockutil --add /Users/eheaton/Downloads --display folder --view grid --sort dateadded --no-restart
+dockutil --add /Users/eheaton/Applications --display folder --view grid --sort dateadded --no-restart
+dockutil --add /Users/eheaton/Documents --display folder --view grid --sort dateadded --no-restart
+dockutil --add /Users/eheaton/Documents/Screenshots --display folder --view grid --sort dateadded --no-restart
+
+killall Dock
+
+# ======================================================
+# Misc
+# ======================================================
+
+# Hide battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "NO"
+
+# Disable the “Are you sure you want to open this application?” dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Hot corners -> bottom left -> start screen saver
+defaults write com.apple.dock "wvous-bl-corner" -int 5
+defaults write com.apple.dock "wvous-bl-modifier" -int 0
 
 # - Install SSH keys
