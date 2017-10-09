@@ -35,6 +35,7 @@ alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I rc'
 alias cloud='cloudapp'
 alias mt='multitail -CS php'
 alias sing='say --voice="Good News"'
+alias markoff="open -a /Applications/Markoff"
 
 #
 # Opens "Marked" markdown reader for OSX
