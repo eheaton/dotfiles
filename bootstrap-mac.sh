@@ -237,7 +237,7 @@ defaults write com.apple.dock "wvous-bl-modifier" -int 0
 
 # TODO:
 # - Install SSH Keys
-# - Setup preferences (iterm, quicksilver, etc...)
+# - Setup preferences (iterm, quicksilver, 1Password, etc...)
 # - Install specific Adobe Apps
 # - Install Android SDK / Studio?
 # - Make iTerm default mac terminal
@@ -247,3 +247,7 @@ defaults write com.apple.dock "wvous-bl-modifier" -int 0
 # - Make code modular (no one big file)
 # - Introduce settigns file
 # - Insert checks for re-running script.
+# - Set Icons?
+# - Clone the repo if run from an install command
+# - MS Office requires password. We should adjust that.
+# - Reminder to install shift :( no longer avail via brew
