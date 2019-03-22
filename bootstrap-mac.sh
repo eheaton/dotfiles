@@ -3,6 +3,8 @@ set -u
 set -e
 
 [ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
+# Install XCode Command Line Tools
+[ `xcode-select -p 1>/dev/null; echo $?` ] || xcode-select --install
 
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
