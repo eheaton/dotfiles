@@ -106,6 +106,8 @@ mas upgrade
   brew cask install 1password
 # - 1Password CLI
   brew cask install 1password-cli
+# - Ultimaker Cura
+  brew cask install ultimaker-cura
 
 # - Quicklook Plugins
   brew cask install qlmarkdown
