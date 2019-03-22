@@ -48,8 +48,6 @@ read -n 1 -s -r -p "(press any key to continue)"
 # all of the above
 mas upgrade
 
-exit 0
-
 # ======================================================
 # Apps to install via. Brew Cask
 # ======================================================
@@ -132,9 +130,9 @@ exit 0
     brew install httpie
 # - GIT
     brew install git
-
 # - Dockutil
     brew install dockutil
+exit 0
 
 # - BRP (WIP)
 # brew install brp
