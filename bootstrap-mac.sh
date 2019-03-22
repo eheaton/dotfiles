@@ -255,3 +255,7 @@ defaults write com.apple.dock "wvous-bl-modifier" -int 0
 # - MS Office requires password. We should adjust that. Same with wacom
 # - Wacom prompts us with system extension block warnings. Disable this
 # - Reminder to install shift :( no longer avail via brew
+# - Link up other dotfiles deps
+# - From LibFFI <<<
+# export LDFLAGS="-L/usr/local/opt/libffi/lib/"
+# export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
