@@ -62,8 +62,6 @@ mas upgrade
   brew cask install kaleidoscope
 # - GitTower
   brew cask install tower
-# - Paw
-  brew cask install paw
 # - phpStorm
   brew cask install phpstorm
 # - Sublime Text
@@ -96,14 +94,18 @@ mas upgrade
   brew cask install sublime-text
 # - Whatsapp Desktop Tool
   brew cask install whatsapp
-# - Shift (mail client)
-  brew cask install shift
+# # - Shift (mail client)
+#   brew cask install shift
 # - Wacom Drivers
   brew cask install homebrew/cask-drivers/wacom-intuos3-tablet
 # - Touch Designer
   brew cask install touchdesigner
 # - iTerm
   brew cask install iterm2
+# - 1Password
+  brew cask install 1password
+# - 1Password CLI
+  brew cask install 1password-cli
 
 # - Quicklook Plugins
   brew cask install qlmarkdown
