@@ -128,7 +128,6 @@ mas upgrade
     brew install git
 # - Dockutil
     brew install dockutil
-exit 0
 
 # - BRP (WIP)
 # brew install brp
@@ -174,6 +173,8 @@ exit 0
     --with-xvid \
     --with-zeromq \
     --with-zimg
+
+exit 0
 
 # ======================================================
 # System Preferences
@@ -249,5 +250,6 @@ defaults write com.apple.dock "wvous-bl-modifier" -int 0
 # - Insert checks for re-running script.
 # - Set Icons?
 # - Clone the repo if run from an install command
-# - MS Office requires password. We should adjust that.
+# - MS Office requires password. We should adjust that. Same with wacom
+# - Wacom prompts us with system extension block warnings. Disable this
 # - Reminder to install shift :( no longer avail via brew
