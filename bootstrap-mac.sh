@@ -7,6 +7,7 @@ set -e
 
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+[ `which brew` ] || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install Homebrew cask
 brew tap caskroom/cask
@@ -14,6 +15,11 @@ brew tap caskroom/cask
 # Install Mac App store CLI
 brew install mas
 brew install wget
+[ `which mas` ] || brew install mas
+[ `which wget` ] || brew install wget
+echo "Please take a minute to sign into the Mac App Store under your account..."
+open -a "App Store"
+read -n 1 -s -r -p "(press any key to continue)"
 
 mas signin apple@b-reel.com
 mas signin eric.heaton@mac.com
