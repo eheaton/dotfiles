@@ -35,16 +35,12 @@ read -n 1 -s -r -p "(press any key to continue)"
   mas install 576421334
 # - Divvy
   mas install 413857545
-# - iPhoto
-  mas install 408981381
 # - MediaInfo
   mas install 510620098
 # - Reeder
   mas install 880001334
 # - Textual 5
   mas install 896450579
-# - Tweetbot
-  mas install 557168941
 # - XCode
   mas install 497799835
 
