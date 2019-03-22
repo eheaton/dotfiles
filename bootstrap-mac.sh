@@ -68,8 +68,6 @@ mas upgrade
   brew cask install paw
 # - phpStorm
   brew cask install phpstorm
-# - Sip
-  brew cask install sip
 # - Sublime Text
   brew cask install sublime-text
 # - Sequel Pro
@@ -78,8 +76,6 @@ mas upgrade
   brew cask install quicksilver
 # - Insomnia
   brew cask install insomnia
-# - Choosey
-  brew cask install choosey
 # - VLC
   brew cask install vlc
 # - Spotify
