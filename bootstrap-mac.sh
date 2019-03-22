@@ -13,8 +13,6 @@ set -e
 brew tap caskroom/cask
 
 # Install Mac App store CLI
-brew install mas
-brew install wget
 [ `which mas` ] || brew install mas
 [ `which wget` ] || brew install wget
 echo "Please take a minute to sign into the Mac App Store under your account..."
