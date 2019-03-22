@@ -1,4 +1,6 @@
 #!/bin/bash
+set -u
+set -e
 
 [ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
 
