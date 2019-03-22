@@ -19,8 +19,6 @@ echo "Please take a minute to sign into the Mac App Store under your account..."
 open -a "App Store"
 read -n 1 -s -r -p "(press any key to continue)"
 
-
-
 # ======================================================
 # Mac App Store (MAS) Apps
 # ======================================================
@@ -236,6 +234,14 @@ defaults write com.apple.dock "wvous-bl-corner" -int 5
 defaults write com.apple.dock "wvous-bl-modifier" -int 0
 
 # TODO:
-# Install SSH Keys
-# Setup preferences (iterm, quicksilver, etc...)
-# - Install SSH keys
+# - Install SSH Keys
+# - Setup preferences (iterm, quicksilver, etc...)
+# - Install specific Adobe Apps
+# - Install Android SDK / Studio?
+# - Make iTerm default mac terminal
+# - Setup oh-my-zsh
+# - Swtich to Zsh
+# - Group install groups into loops
+# - Make code modular (no one big file)
+# - Introduce settigns file
+# - Insert checks for re-running script.
