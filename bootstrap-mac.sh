@@ -142,7 +142,7 @@ mas upgrade
   # Tap the correct repo (that allows for flags)
   brew tap varenc/ffmpeg
   # Make this the default when installing FFMPEG
-  tap-pin varenc/ffmpeg
+  brew tap-pin varenc/ffmpeg
   # Install FFMPEG with all deps / flags
   brew install ffmpeg \
     --with-chromaprint \
