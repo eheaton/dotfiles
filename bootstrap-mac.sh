@@ -263,3 +263,10 @@ defaults write com.apple.dock "wvous-bl-modifier" -int 0
 #       export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 # >>>
 # - Add Upgrade Flag
+# - MacOptions to support:
+#     Disable warning on downloaded files
+#     Disable Gatekeeper (allow unsigned macs)
+#     Turn on automatic updates
+#     Update dock location
+#     Update UI Color (Mojave only)
+#     Set Dark Mode
