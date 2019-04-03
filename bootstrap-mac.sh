@@ -23,8 +23,6 @@ read -n 1 -s -r -p "(press any key to continue)"
 # Mac App Store (MAS) Apps
 # ======================================================
 
-# - 1Password
-  mas install 443987910
 # - Bear
   mas install 1091189122
 # - The Clock
@@ -37,8 +35,6 @@ read -n 1 -s -r -p "(press any key to continue)"
   mas install 510620098
 # - Reeder
   mas install 880001334
-# - Textual 5
-  mas install 896450579
 # - XCode
   mas install 497799835
 
