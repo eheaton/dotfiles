@@ -1,4 +1,5 @@
-RPROMPT='%{$FG[010]%}$( brp config:project.name )%{$reset_color%}'
+# RPROMPT='%{$FG[010]%}$( brp config:project.name )%{$reset_color%}'
+RPROMPT=''
 
 PROMPT='
 %{$FG[014]%}[ %D{%I:%M %p} ] %(!.%{$FG[001]%}.%{$fg[cyan]%})%n%{$reset_color%}:%{$fg[green]%}%~%{$reset_color%}$(git_prompt_info)
